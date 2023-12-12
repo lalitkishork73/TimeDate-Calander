@@ -1,0 +1,91 @@
+.main{
+    width: 100%;
+    height: 80vh; 
+    /* border:1px solid black; */
+    padding:1rem 0;
+}
+
+.outerlayer{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.outerlayer :hover{
+    background-color: aliceblue;
+    /* border: 1px; */
+}
+
+.innerlayer{
+    border: 1px solid rgb(58, 55, 55);
+    display: flex;
+    background-color: wheatblue;
+    
+}
+
+.days{
+    width: 5%;
+    height: 130px;
+    /* border-top: 1px solid black; */
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+.day{
+    font-weight: bold;
+    color: #b30401;
+}
+.daydate{
+    font-size: small;
+}
+
+
+.appoitment{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    /* border-bottom: 1px solid black;  */
+    margin-left: 10px;
+    /* overflow-x: hidden   ; */
+
+}
+
+.currentDate{ 
+    background-color: rgb(229, 253, 194);
+}
+
+.dayAM{
+    width: 100%;   
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(7, 100px);
+    /* grid-template-rows: fr repeat(2, 10px); */
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    align-self:center;
+    
+}
+.dayPM{
+    width: 100%;   
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(11, 100px);
+    /* grid-template-rows: fr repeat(2, 10px);  */
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    align-self:center;
+}
+
+.container{
+    height: 25px;
+}
+
+.container input{
+    border: 1px solid rgb(68, 145, 245);
+}
